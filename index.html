@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shareable resume builder</title>
+</head>
+<body>
+    <div class="page">
+        <div class="input-container">
+            <div class="title">Shareable Resume Builder</div>
+            <form id="input-form">
+                <div class="user-details">
+                    <h3>Personal Information</h3>
+                    <hr>
+                    <br>
+                    <div class="input-box">
+                        <span class="details">Username:</span>
+                        <br>
+                        <input type="text" placeholder="Enter your username" id="input-username"> 
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Full Name:</span>
+                        <br>
+                        <input type="text" placeholder="Enter your Name" required id="input-name"> 
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Designation:</span>
+                        <br>
+                        <input type="text" placeholder="Enter your field" id="input-designation">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Objective:</span>
+                        <br>
+                        <textarea name="description" id="input-content"  placeholder="Enter your objective"></textarea>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="contact-details">
+                    <h3>Contact Information</h3>
+                    <hr>
+                    <br>
+                    <div class="input-box">
+                        <span class="details">Contact No.:</span>
+                        <br>
+                        <input type="text" placeholder="Enter your contact no" id="input-cell">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email:</span>
+                        <br>
+                        <input type="text" placeholder="Enter your email" id="input-email">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">LinkedIn(URL):</span>
+                        <br>
+                        <input type="text" placeholder="Enter your linkedin URL" id="input-linkedin-url">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="edu-details">
+                    <h3>Educational Details</h3>
+                    <hr>
+                    <br>
+                    <div class="input-box">
+                        <span class="details">Education:</span>
+                        <br>
+                        <textarea name="description" id="input-education" placeholder="Enter your education"></textarea>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="prof-details">
+                    <h3>Professional Details</h3>
+                    <hr>
+                    <br>
+                    <div class="input-box">
+                        <span class="details">Skills(coma separated):</span>
+                        <br>
+                        <input type="text" placeholder="Enter your skills" id="input-skills">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Experience:</span>
+                        <br>
+                        <input type="text" placeholder="Enter your experience" id="input-experience">
+                    </div>
+                </div>
+                <br>
+
+                <button type="submit">Generate resume</button>
+            </form>
+        </div>
+
+        <div id="resume-display" contenteditable="true"></div>
+        
+            <!-- Section for the shareable link and download -->
+            <div id="shareable-link-container">
+                <h2>Shareable Link</h2><br>
+                <a href="#" id="shareable-link" target="_blank"></a><br>
+                <button id="download-pdf"><b>Download</b></button>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
