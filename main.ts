@@ -59,7 +59,7 @@ form.addEventListener('submit', (event: Event) => {
 
     // Shareable URL
     const link = `resumes/${username.replace(/\s+/g, '_')}_resume.html; // Fix the backticks and regex`;
-    const anchorHTML = `<a target="_blank" id="shareable-link" href="#resume">${link}</a>`; // Create anchor HTML string
+    const anchorHTML = `<a target="_blank" id="shareable-link" href="https://mail.google.com/mail/u/0/#inbox">${link}</a>`; // Create anchor HTML string
 
     // Download PDF
     downloadPdfButton.addEventListener('click', () => {
